@@ -1,5 +1,6 @@
 package project;
 
-public class Billing {
-
+//interface to eventually be used by Rental
+public interface Billing {
+    void billing();
 }
