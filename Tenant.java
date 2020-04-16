@@ -1,5 +1,9 @@
 package project;
 
-public class Tennant {
+public class Tenant {
+    int tenantID;
 
+    public Tenant(int tenantID) {
+        this.tenantID = tenantID;
+    };
 }
