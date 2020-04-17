@@ -14,8 +14,15 @@ public class ApartmentRental extends Rental {
         this.utilityRoom = utilityRoom;
     }
 
-    @Override
-    public void billing() {
+    public Boolean getCommonArea() {
+        return this.commonArea;
+    }
 
-    };
+    public Boolean getFitnessCenter() {
+        return this.fitnessCenter;
+    }
+
+    public Boolean getUtilityRoom() {
+        return this.utilityRoom;
+    }
 }

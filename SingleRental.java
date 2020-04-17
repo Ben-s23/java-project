@@ -5,16 +5,23 @@ public class SingleRental extends Rental {
     private Boolean frontYard;
     private Boolean backYard;
 
-    public SingleRental(int propertyID, float rentAmt, int lease, String location, int beds, int renterID, Date rentStart, Boolean garage, Boolean frontYard, Boolean backYard) {
+    public SingleRental(int propertyID, float rentAmt, int lease, String location, int beds, int renterID,
+            Date rentStart, Boolean garage, Boolean frontYard, Boolean backYard) {
         super(propertyID, rentAmt, 365, location, beds, renterID, rentStart);
         this.garage = garage;
         this.frontYard = frontYard;
         this.backYard = backYard;
     }
 
-    @Override
-    public void billing() {
+    public Boolean getGarage() {
+        return this.garage;
+    }
 
-    };
+    public Boolean getFrontYard() {
+        return this.frontYard;
+    }
 
+    public Boolean getBackYard() {
+        return this.backYard;
+    }
 }

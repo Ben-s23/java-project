@@ -2,7 +2,7 @@ package project;
 import java.util.*;
 
 // A super class, RentalProperty, for the two different rental property.
-public abstract class Rental implements Billing {
+public class Rental{
     //protected so that the subclasses can access later
     protected int propertyID;  //property ID
     protected float rentAmt;  //rent amount
@@ -30,10 +30,20 @@ public abstract class Rental implements Billing {
     public float getBeds() {
         return this.beds;
     }
+
     public void setRentAmt(float rentAmt) {
         this.rentAmt = rentAmt;
     }
+
     public float getrentAmt() {
         return this.rentAmt;
+    }
+
+    public void setRenterID() {
+        //todo;
+    }
+
+    public int getRenterID() {
+        return this.renterID;
     }
 }
