@@ -6,7 +6,7 @@ public abstract class Rental implements Billing {
     //protected so that the subclasses can access later
     protected int propertyID;  //property ID
     protected float rentAmt;  //rent amount
-    protected int lease; //number of days (365 year lease, 90 for 3 month)
+    protected int lease; //number of days (365 year lease, 90 for 3 month, etc)
     protected String location; //property location
     protected int beds; //number of bedrooms
     protected int renterID;  //who is renting it, if null - unoccupied
@@ -21,5 +21,19 @@ public abstract class Rental implements Billing {
         this.beds = beds;
         this.renterID = renterID;
         this.rentStart = rentStart;
+    }
+
+    public int getPropertyID() {
+        return this.propertyID;
+    }
+
+    public float getBeds() {
+        return this.beds;
+    }
+    public void setRentAmt(float rentAmt) {
+        this.rentAmt = rentAmt;
+    }
+    public float getrentAmt() {
+        return this.rentAmt;
     }
 }
