@@ -7,8 +7,8 @@ public class ApartmentRental extends Rental {
     private Boolean fitnessCenter;
     private Boolean utilityRoom;
 
-    public ApartmentRental(int rentalID, float rentAmt, int lease, String location, int beds, int renterID, Date rentStart, Boolean commonArea, Boolean fitnessCenter, Boolean utilityRoom) {
-        super(rentalID, rentAmt, 180, location, beds, renterID, rentStart);
+    public ApartmentRental(int propertyID, float rentAmt, int lease, String location, int beds, int renterID, Date rentStart, Boolean commonArea, Boolean fitnessCenter, Boolean utilityRoom) {
+        super(propertyID, rentAmt, 180, location, beds, renterID, rentStart);
         this.commonArea = commonArea;
         this.fitnessCenter = fitnessCenter;
         this.utilityRoom = utilityRoom;
